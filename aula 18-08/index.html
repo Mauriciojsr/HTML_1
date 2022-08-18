@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Complexos</title>
+
+    <style>
+        ul li{
+            color:blue;
+        }
+
+        tr td{
+            color:aquamarine
+        }
+
+        ul > li{
+            color:gray;
+        }
+
+        h1+p{
+            color: blueviolet;
+        }
+                
+    </style>
+</head>
+<hr>
+<body>
+    <!--Seletor descendenre Ex: Seletor 2 descendente seletor 1-->
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </ul>
+    </div>
+    <hr>
+    <!--Seletor Filho. Ex: Todo seletor 2 deve ser filho de Seletor 1-->
+    
+    <ul>
+        <a href="#"><li>Item 1</li></a>            
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+    </ul>
+    <hr>
+   
+
+    <table>
+        <tr>
+            <a href="#"><td>Coluna 1</td></a>
+            
+        </tr>
+        <tr>
+            <td>Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Coluna 4</td>
+        </tr>
+    </table> 
+    <hr>
+    
+    <!--Seletor imediatamente seguinte-->
+
+    <h1>Exemplo</h1>
+    <hr>
+    <p>exemplo CSS</p>
+    
+</body>
+</html>

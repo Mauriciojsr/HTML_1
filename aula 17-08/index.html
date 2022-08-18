@@ -8,6 +8,10 @@
     <title>Formulário</title>
     <style>
 
+        #p{
+            font: 24px Verdana bold;
+        }
+
         body{
             background-color: aquamarine;
         }
@@ -61,7 +65,7 @@
             <table cellspace="10">
                 <tr>
                     <td>
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome:</label>
                         <!--Nome do campo-->
                     </td>
                     <td align="left">
@@ -69,7 +73,7 @@
                         <!--Abre o campo para adicionar dados-->
                     </td>
                     <td>
-                        <label for="sobrenome">Sobrenome</label>
+                        <label for="sobrenome">Sobrenome:</label>
                     </td>
                     <td align="left">
                         <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome">
@@ -77,7 +81,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Data Nascimento</label>
+                        <label>Data Nascimento:</label>
                     </td>
                     <td align="left">
                         <!--Campo para adicionar a data-->
@@ -88,13 +92,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="rg">Rg</label>
+                        <label for="rg">Rg:</label>
                     </td>
                     <td align="left">
                         <input type="text" name="rg" size="13" maxlength="13" placeholder="Digite seu RG">
                     </td>
                     <td>
-                        <label>CPF</label>
+                        <label>CPF:</label>
                     </td>
                     <td align="left">
                         <input type="text" name="cpf" size="9" maxlength="9" placeholder="000000000">-<input type="cpf2" size="2" maxlength="2" placeholder="00">
@@ -108,6 +112,8 @@
                 <input type="reset" value="Limpar" class="btn-Limpar">
             </div>
     </form>
+    <br>
+    <h1 id="p">Bahhh</h1>
 </body>
 
 </html>

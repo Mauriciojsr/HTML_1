@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Seletor pela tag  aplica-se a todas as H4 da sua Página*/
+
+        h4{
+            color: red;
+        }
+
+        /* Seletor criado atraves de uma classe que deverá ser chamado na CLASS da tag ex: class="classe"*/
+
+        .classe{
+            font-family: sans-serif;
+            color: blue;
+        }
+
+        /* Seletor atraves da tag e classe. Só será plicado quando for a tag citada
+        antes do ponto e chamado na class a classe apos o ponto*/
+
+        h4.classe{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: gray;
+            
+        }
+
+        /* Seletor com id deve ser chamado dentro do ID da tag. Ex: id="p1"*/
+
+        #p1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h4> 
+        Exemplo 1 H4 CSS
+    </h4>
+    <br>
+    <h3 class="classe">
+        Exemplo Classe CSS
+    </h3>
+    <br>
+    <h4 class="classe">
+        Exemplo de Tag e Classe
+    </h4>
+    <br>
+    <p id="p1">
+        Exemplo id CSS
+    </p>
+    
+</body>
+</html>

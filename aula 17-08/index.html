@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        body{
+            background-color: aquamarine;
+        }
+
+        form{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+
+        fieldset{
+            border-style: dashed;
+            border-color: blue;
+            background-color: gainsboro;
+        }
+
+        input{
+            background-color: whitesmoke;
+            border: 2px solid blue;
+            border-radius: 20px;
+        }
+
+        input.btn-Cadastrar{
+            background-color: greenyellow;
+            border: 1px solid blue;
+            font-weight: bolder;
+            cursor: pointer;
+            padding: 8px 32px;
+            font-size: 16px;
+        }
+
+        input.btn-Limpar{
+            background-color: orangered;
+            border: 1px solid blue;
+            font-weight: bolder;
+            cursor: pointer;
+            padding: 8px 32px;
+            font-size: 16px;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <form action="" method="post">
+        <!--Dados Pessoais-->
+        <fieldset>
+            <legend><b>Dados Pessoais</b></legend>
+            <table cellspace="10">
+                <tr>
+                    <td>
+                        <label for="nome">Nome</label>
+                        <!--Nome do campo-->
+                    </td>
+                    <td align="left">
+                        <input type="text" name="nome" placeholder="Digite seu Nome">
+                        <!--Abre o campo para adicionar dados-->
+                    </td>
+                    <td>
+                        <label for="sobrenome">Sobrenome</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Data Nascimento</label>
+                    </td>
+                    <td align="left">
+                        <!--Campo para adicionar a data-->
+                        <input type="text" name="dia" size="2" maxlength="2" placeholder="dd">
+                        <input type="text" name="mês" size="2" maxlength="2" placeholder="mm">
+                        <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rg">Rg</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="rg" size="13" maxlength="13" placeholder="Digite seu RG">
+                    </td>
+                    <td>
+                        <label>CPF</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="cpf" size="9" maxlength="9" placeholder="000000000">-<input type="cpf2" size="2" maxlength="2" placeholder="00">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+            <div align="center">
+                <input type="submit" value="Cadastrar" class="btn-Cadastrar">
+                <input type="reset" value="Limpar" class="btn-Limpar">
+            </div>
+    </form>
+</body>
+
+</html>

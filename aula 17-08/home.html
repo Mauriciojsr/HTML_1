@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        form {
+            width: 350px;
+            height: 280px;
+            background-color: #e3ebdb;
+            padding: 0px 10px;
+            border-radius: 5px;
+        }
+
+        h1{
+            color: #638e99;
+    
+        }
+
+        h6 {
+            font-style: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input.dados{
+            padding: 8px;
+            margin: 2px;
+            width: 300px;
+        }
+
+        input.btn {
+            background-color: rgba(47, 147, 255, 0.653);
+            cursor: pointer;
+            padding: 8px 32px;
+            font-size: 16px;
+            color: white;
+            border: 0px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <h1>CADASTRE-SE</h1>
+
+        <h6>Insira seus dados abaixo para receber as novidades gratuitamente em seu e-mail</h6>
+        <p>
+            <input class="dados" id="nome_login" name="nome_login" required="required" type="text" placeholder="Seu nome" />
+        </p>
+
+        <p>
+            <input class="dados" id="email_login" name="email_login" required="required" type="password" placeholder="Seu e-mail" />
+        </p>
+
+        <p>
+            <input type="submit" value="Cadastrar" class="btn" />
+        </p>
+
+    </form>
+
+</body>
+
+</html>

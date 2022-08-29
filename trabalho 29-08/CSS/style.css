@@ -1,5 +1,5 @@
 .container{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     width: 200px;
     height: 230px;
@@ -7,6 +7,7 @@
     color: black;
     margin: 0 auto;
     background: linear-gradient(120deg, black 0%, yellow 100%);
+    transition-duration: 3s;
 }
 
 input{

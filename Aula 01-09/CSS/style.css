@@ -11,21 +11,20 @@ label, input{
     pointer-events: none;
     -webkit-tap-highlight-color: transparent;
 }
-
-input:nth-child(6n+2), input:checked + input +input + label{
+input:nth-child(6n+2),
+ input:checked + input + input + label{
     left: 0;
 }
 
-input:nth-child(6n+3), input:checked + input +input + label{
+input:nth-child(6n+3), 
+input:checked + input + label{
     left: 30vmin;
 }
-
-input:nth-child(6n+4), input:checked + input +input + label{
+input:nth-child(6n+4),
+ input:checked + label{
     left: 60vmin;
 }
-
-label,
-input:hover, 
+label, input:hover, 
 input[readonly]:focus + input,
 input[readonly]:focus + input + input, 
 input[readonly]:focus + input + input + input{
@@ -33,39 +32,39 @@ input[readonly]:focus + input + input + input{
 }
 
 input[readonly],
-input:nth-child(6n+2):checked ~input:nth-child(6n+2),
-input:nth-child(6n+3):checked ~input:nth-child(6n+3),
-input:nth-child(6n+4):checked ~input:nth-child(6n+4){
+input:nth-child(6n + 2):checked ~input:nth-child(6n + 2),
+input:nth-child(6n + 3):checked ~input:nth-child(6n + 3),
+input:nth-child(6n + 4):checked ~input:nth-child(6n + 4){
     pointer-events: none;
 }
 
-#um ~input,
-#um ~label{
+#um ~ input,
+#um ~ label{
     z-index: 6;
 }
 
-#dois ~input,
-#dois ~label{
+#dois ~ input,
+#dois ~ label{
     z-index: 5;
 }
 
-#tres ~input,
-#tres ~label{
+#tres ~ input,
+#tres ~ label{
     z-index: 4;
 }
 
-#quatro ~input,
-#quatro ~label{
+#quatro ~ input,
+#quatro ~ label{
     z-index: 3;
 }
 
-#cinco ~input,
-#cinco ~label{
+#cinco ~ input,
+#cinco ~ label{
     z-index: 2;
 }
 
-#seis ~input,
-#seis ~label{
+#seis ~ input,
+#seis ~ label{
     z-index: 1;
 }
 
@@ -77,17 +76,20 @@ input#zero:focus{
     pointer-events: none;
 }
 
-input[readonly]:focus + input:checked ~#zero{
+input[readonly]:focus +
+ input:checked ~ #zero{
     left: 0;
     pointer-events: initial;
 }
 
-input[readonly]:focus + input + input:checked ~ #zero{
+input[readonly]:focus + input + 
+input:checked ~ #zero{
     left: 30vmin;
     pointer-events: initial;
 }
 
-input[readonly]:focus + input + input + input:checked ~ #zero{
+input[readonly]:focus + input + input + 
+input:checked ~ #zero{
     left: 60vmin;
     pointer-events: initial;
 }
@@ -128,9 +130,8 @@ input:focus + input:checked + input + input + label + .disco{
     transition: order 0s;
     animation: float 3s ease-in-out infinite alternate;
 }
-
-input:focus +input + input:checked + input + label + .disco{
-    order: 6;
+input:focus + input + input:checked + input + label + .disco{
+    order: 4;
     transition: order 0s;
     animation: float 3s ease-in-out infinite alternate;
 }
@@ -232,7 +233,7 @@ input[readonly]:focus + input + input + input:hover ~.c{
 }
 
 input[readonly]:focus + input:checked ~.a,
-input[readonly]:focus + input + input:checked ~.b
+input[readonly]:focus + input + input:checked ~.b,
 input[readonly]:focus + input + input + input:checked ~.c{
     flex-grow: 1;
 }
@@ -254,12 +255,12 @@ input[readonly]:focus + input + input + input:checked ~.c{
     transition: opacity 0.3s;
 }
 
-input:nth-child(6n+4):checked ~
-input:nth-child(6n+4):checked ~
-input:nth-child(6n+4):checked ~
-input:nth-child(6n+4):checked ~
-input:nth-child(6n+4):checked ~
-input:nth-child(6n+4):checked ~ .win{
+input:nth-child(6n + 4):checked ~
+input:nth-child(6n + 4):checked ~
+input:nth-child(6n + 4):checked ~
+input:nth-child(6n + 4):checked ~
+input:nth-child(6n + 4):checked ~
+input:nth-child(6n + 4):checked ~.win{
     opacity: 1;
     pointer-events: initial;
 }
@@ -277,10 +278,10 @@ h1{
     font-size: 7.5vmin;
     font-weight: lighter;
     text-align: center;
-    background: linear-gradient(to right, rgba(150,111,51,0.4), rgba(150,111,51,0.2)),
-    repeating-linear-gradient(to right, #eec487, #eec487 3vmin, #f3cf9a 3vmin, #f3cf9a 6vmin,
-    #f8d8a2 6vmin, #f8d8a2 9vmin, #f1ca88 9vmin, #f1ca88 12vmin, #f4d09e 12vmin, #f4d09e 15vmin,
-    #faddb0 15vmin, #faddb0 18vmin, #eec88a 18vmin, #eec88a 21vmin);
+    background: linear-gradient(to right, rgba(150, 111, 51, 0.4), rgba(150, 111, 51, 0.2)),
+    repeating-linear-gradient(to right, #eec487, #eec487 3vmin, #f3cf9a 3vmin, #f3cf9a 6vmin, 
+    #f8d8a2 6vmin, #f8d8a2 9vmin, #f1ca88 9vmin, #f1ca88 12vmin, #f4d09e 12vmin,
+    #f4d09e 15vmin,#faddb0 15vmin, #faddb0 18vmin, #eec88a 18vmin, #eec88a 21vmin);
 }
 
 form{
@@ -315,10 +316,11 @@ form{
     border-radius: 1vmin;
     width: 95vmin;
     height: 7.5vmin;
-    background: linear-gradient(to right, rgba(150,111,51,0.4), rgba(150,111,51,0.2)),
-    repeating-linear-gradient(to right, #eec487, #eec487 3vmin, #f3cf9a 3vmin, #f3cf9a 6vmin,
-    #f8d8a2 6vmin, #f8d8a2 9vmin, #f1ca88 9vmin, #f1ca88 12vmin, #f4d09e 12vmin, #f4d09e 15vmin,
-    #faddb0 15vmin, #faddb0 18vmin, #c1ee8a 18vmin, black 21vmin);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent),
+    linear-gradient(#b27315, #966f33 13%, #faddb0 14.5%, #faddb0 27.5%,
+     #966f33 29%, #966f33 42%, #faddb0 43.5%, #d7b889 56.5%,
+      #966f33 58%, #966f33 71%, #d7b889 72.5%, #d7b889 85.5%,
+       #966f33 87%, #b27315);
 }
 
 button{

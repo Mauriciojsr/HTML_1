@@ -1,0 +1,65 @@
+body{
+    background-color: beige;
+
+}
+
+.curriculo{
+    margin: 0 auto;
+    width: 700px;
+    height: 800px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.resumo{
+    text-align: right;
+}
+
+.photo{
+    width: 96px;
+    height: 119px;
+}
+
+.dados{
+    display: flex;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    color: blue;
+}
+h4{
+    color: blue;
+}
+p{
+    text-align: justify;
+    
+}
+.dados h2{
+    margin-top: 0;
+}
+
+.dados h4{
+    margin-top: 0;
+}
+
+.fa-envelope{
+    color: green
+}
+
+.fa-phone-square{
+    color: red;
+}
+
+.fa-linkedin-square{
+    color: blue;
+}
